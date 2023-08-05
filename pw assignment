@@ -1,0 +1,88 @@
+Q1: What are the Probability Mass Function (PMF) and Probability Density Function (PDF)? Explain with an example.
+Probability Mass Function (PMF): The Probability Mass Function (PMF) is used for discrete random variables. It gives the probability that a discrete random variable takes on a specific value. The PMF maps each possible value of the random variable to its probability of occurrence.
+Consider rolling a fair six-sided die. The random variable X represents the outcome of the die roll, which can take values from 1 to 6. Since each outcome has an equal chance of occurring, the PMF of the die roll is: P(X=1)=P(X=2)=P(X=3)=P(X=4)=P(X=5)=P(X=6)=1/6
+Probability Density Function (PDF): The Probability Density Function (PDF) is used for continuous random variables. It describes the likelihood of a continuous random variable falling within a specific range of values. Unlike the PMF, the PDF does not give the probability at a specific point but instead provides the probability of the random variable being in an interval.
+Example: Consider the height of adult males. Let X be a continuous random variable representing the height (in inches) of an adult male. The height can take any real value within a range (e.g., from 60 inches to 80 inches). The PDF for this continuous distribution would provide the likelihood of finding an adult male with a height between any two given values (e.g., F(70)=0.02f(70)=0.02 means there is a 2% chance of finding an adult male with a height between 69.5 and 70.5 inches).
+
+Q2: What is Cumulative Density Function (CDF)? Explain with an example. Why CDF is used?
+The Cumulative Density Function (CDF) is a fundamental concept in probability and statistics. It is used to describe the probability distribution of a random variable, both for discrete and continuous random variables. The CDF gives the probability that the random variable takes on a value less than or equal to a specified value.
+1.	Easy Computation: It provides a straightforward way to compute probabilities for a random variable. Instead of summing up individual probabilities for each value, you can use the CDF to find probabilities for intervals.
+2.	Relationship with PDF/PMF: The CDF is related to the Probability Density Function (PDF) for continuous random variables and the Probability Mass Function (PMF) for discrete random variables. The derivative of the CDF gives the PDF/PMF.
+
+
+Q3: What are some examples of situations where the normal distribution might be used as a model?
+1.	Height and Weight: The heights and weights of adult humans often follow approximately normal distributions, making the normal distribution useful for modeling these physical characteristics in populations.
+2.	Test Scores: In educational testing, the scores of large groups of students on standardized exams are often modeled using the normal distribution.
+3.	IQ Scores: Intelligence quotient (IQ) scores are often modeled using the normal distribution, with a mean of 100 and a standard deviation of 15
+4.	Population Studies: In demography and population studies, the normal distribution is used to model various population characteristics, such as ages and income.
+5.	Financial Data: In finance, returns of investment portfolios, stock prices, and other financial data often exhibit a bell-shaped distribution and are modeled using the normal distribution.
+
+Explain how the parameters of the normal distribution relate to the shape of the distribution.
+Mean (�μ): The mean (�μ) is the central value or the average of the data in the distribution. It determines the location of the center of the bell-shaped curve. When the mean is shifted to the right, the entire distribution is shifted to the right, and when the mean is shifted to the left, the distribution is shifted to the left. The mean is also the point of symmetry of the distribution.
+Standard Deviation (�σ): The standard deviation (�σ) controls the spread or dispersion of the data points around the mean. It indicates how much the data deviates from the mean. A larger standard deviation means the data points are more spread out from the mean, while a smaller standard deviation means the data points are more concentrated around the mean.
+
+Q4: Explain the importance of Normal Distribution. Give a few real-life examples of Normal
+
+Data Approximation: The normal distribution provides an excellent approximation for many real-world phenomena, especially when dealing with large sample sizes. This makes it a practical choice for modeling data in various applications  
+Ease of Analysis: The mathematical properties of the normal distribution, such as symmetry, known moments (mean and variance), and the ease of working with its cumulative distribution function, make it analytically tractable. This simplicity simplifies statistical calculations and theoretical analyses.
+Robustness: The normal distribution is relatively robust to small deviations from normality, especially when dealing with large samples. It is often used as an approximation for other distributions, making data analysis and interpretation more accessible.
+1.	Height and Weight: The heights and weights of adult humans often follow approximately normal distributions, making the normal distribution useful for modeling these physical characteristics in populations.
+2.	Test Scores: In educational testing, the scores of large groups of students on standardized exams are often modeled using the normal distribution.
+3.	IQ Scores: Intelligence quotient (IQ) scores are often modeled using the normal distribution, with a mean of 100 and a standard deviation of 15
+4.	Population Studies: In demography and population studies, the normal distribution is used to model various population characteristics, such as ages and income.
+5.	Financial Data: In finance, returns of investment portfolios, stock prices, and other financial data often exhibit a bell-shaped distribution and are modeled using the normal distribution.
+
+
+Q5: What is Bernaulli Distribution? Give an Example. What is the difference between Bernoulli
+Distribution and Binomial Distribution?
+Bernoulli Distribution: The Bernoulli distribution is a discrete probability distribution that models a single binary random variable, which can take only two possible outcomes, typically labeled as "success" and "failure." It is named after the Swiss mathematician Jakob Bernoulli.
+In the Bernoulli distribution, we have one parameter, denoted as p, which represents the probability of success. The probability of failure is 1−p.
+Eg= tossing a coin {0,1}
+P(H)=0.5
+P(T)=1-p
+1-0.5=0.5
+Number of Trials:
+•	Bernoulli Distribution: The Bernoulli distribution models a single binary trial, which means there is only one experiment with two possible outcomes (often labeled as "success" and "failure").
+•	Binomial Distribution: The binomial distribution models the number of successes in a fixed number of independent Bernoulli trials. It represents the sum of outcomes (successes) from multiple independent and identical Bernoulli trials
+Random Variable:
+•	Bernoulli Distribution: The Bernoulli distribution has one random variable, which can take only two possible values, typically denoted as 1 (success) and 0 (failure).
+•	Binomial Distribution: The binomial distribution has one random variable, representing the number of successes (denoted as �k), which can take integer values from 0 to the number of trials (�n).
+Notation:
+•	Bernoulli Distribution: The Bernoulli distribution is often denoted as �(�)B(p), where �p is the probability of success in a single trial.
+•	Binomial Distribution: The binomial distribution is denoted as �(�,�)B(n,p), where �n represents the number of trials and �p is the probability of success in each trial.
+
+
+Q6. Consider a dataset with a mean of 50 and a standard deviation of 10. If we assume that the datasetis normally distributed, what is the probability that a randomly selected observation will be greaterthan 60? Use the appropriate formula and show your calculations.
+mean = 50
+std_dev = 10
+x = 60
+Z score= x-mean/std dev
+Z score=60-50/10
+=1
+From z score table the value of corresponding to 1 =0.156 
+That is 15 percentage, the probability of having selected observation more than 60% is 15.6%
+
+
+Q7: Explain uniform Distribution with an example.
+The uniform distribution is a probability distribution that represents a random variable where all outcomes within a given range have an equal likelihood of occurring. In other words, each value in the range is equally likely to be observed, and there is a constant probability density over the entire interval.
+Consider a situation where you have a fair six-sided die. The outcome of rolling the die can be modeled using a discrete uniform distribution since each face (1, 2, 3, 4, 5, 6) has an equal probability of 1661 of being rolled.
+
+Q8: What is the z score? State the importance of the z score.
+The z-score, also known as the standard score or standardized score, is a dimensionless measure that represents how many standard deviations a data point is away from the mean of a dataset. It is a fundamental concept in statistics and is widely used in various applications.
+Standardization: The z-score standardizes data, allowing comparison and analysis of values from different datasets that may have different scales and units. It puts all data points on a common scale, making it easier to identify and understand patterns and outliers.
+Relative Position: The z-score provides information about the relative position of a data point in a dataset. A positive z-score indicates that the data point is above the mean, while a negative z-score indicates that it is below the mean.
+Probability Calculation: Z-scores are used to find probabilities associated with specific values in a normal distribution. The standard normal distribution, with a mean of 0 and a standard deviation of 1, is widely used in probability calculations, and z-scores are essential in this context.
+Hypothesis Testing: In hypothesis testing, z-scores are used to compare sample statistics to population parameters or to compare two sample means. Z-tests and z-statistics are commonly used in such tests.
+
+Q9: What is Central Limit Theorem? State the significance of the Central Limit Theorem.
+The Central Limit Theorem (CLT) is a fundamental concept in statistics that describes the behavior of the sample means from a population with any shape of distribution. It states that when we take a large number of random samples from a population, the distribution of the sample means will tend to follow a normal (Gaussian) distribution, regardless of the shape of the original population distribution.
+The Central Limit Theorem is applicable under the following conditions:
+1.	Random Sampling: The samples must be selected randomly from the population, meaning each member of the population has an equal chance of being included in the sample.
+2.	Sample Size: The sample size should be sufficiently large. There is no strict rule for what constitutes a "large" sample size, but as a general guideline, sample sizes greater than 30 are often considered large enough for the CLT to hold. However, for highly skewed populations or populations with heavy tails, larger sample sizes may be required.
+3.	Independence: The samples should be drawn independently. This means that the selection of one sample should not affect the selection of another sample.
+
+Q10: State the assumptions of the Central Limit Theorem.
+1.	Random Sampling: The samples must be selected randomly from the population, meaning each member of the population has an equal chance of being included in the sample.
+2.	Sample Size: The sample size should be sufficiently large. There is no strict rule for what constitutes a "large" sample size, but as a general guideline, sample sizes greater than 30 are often considered large enough for the CLT to hold. However, for highly skewed populations or populations with heavy tails, larger sample sizes may be required.
+3.	Independence: The samples should be drawn independently. This means that the selection of one sample should not affect the selection of another sample.
+
